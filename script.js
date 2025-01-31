@@ -14,7 +14,7 @@ function renderTodos() {
         li.innerHTML = `
             <span>${todo}</span>
             <button onclick="editTodo(${index})">Edit</button>
-            <button onclick="deleteTodo">(${index})</button>
+            <button onclick="deleteTodo(${index})">Delete</button>
         `;
         todoList.appendChild(li);
     });
